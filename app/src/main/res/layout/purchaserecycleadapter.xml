@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear"
+        android:background="@color/whitepure"
+
+        android:weightSum="1">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/image_more"
+            android:src="@drawable/ic_expand_more_black_24dp">
+
+        </ImageView>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:visibility="gone"
+            android:id="@+id/image_less"
+            android:src="@drawable/ic_expand_less_black_24dp"></ImageView>
+        <TextView
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/purchasedate"
+            android:layout_weight="0.2"
+            android:text="Date"
+            android:textSize="@dimen/margin_12"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="textStart"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/purchaseName"
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/margin_12"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_weight="0.28"
+            android:text="Name"
+            android:textAlignment="textStart"
+            android:textColor="@color/black" />
+        <TextView
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/purchasenetamount"
+            android:layout_weight="0.2"
+            android:text="Net \nAmount"
+            android:textSize="@dimen/_16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="textStart"
+            android:textColor="@color/black" />
+
+        <TextView
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/purchaseduedate"
+            android:layout_weight="0.2"
+            android:text="Due Date"
+            android:textSize="@dimen/margin_12"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="textStart"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/purchaseStatus"
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/margin_12"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_weight="0.12"
+            android:text="Status"
+            android:textAlignment="textStart"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/line_bg"
+
+        />
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_marginTop="3dp"-->
+<!--        android:background="@drawable/line_bg"-->
+
+<!--        />-->
+    <LinearLayout
+        android:id="@+id/sublinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/margin_5"
+
+        android:layout_marginBottom="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_marginRight="@dimen/margin_10"
+        android:background="@color/whitepure"
+        android:weightSum="9">
+        <LinearLayout
+            android:id="@+id/payment_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/margin_5"
+
+            android:weightSum="1">
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linear61"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+
+
+                <TextView
+                    android:id="@+id/paymentinwards"
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textSize="@dimen/margin_12"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+
+                    android:layout_weight="0.5"
+                    android:text="Broker"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/broker"
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_regular"
+
+                    android:layout_weight="0.5"
+                    android:text="Direct"
+                    android:textSize="@dimen/_16dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear3"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+
+                android:weightSum="1">
+
+
+
+
+                <TextView
+                    android:id="@+id/moralitycount"
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="@dimen/margin_12"
+                    android:layout_weight="0.5"
+                    android:singleLine="true"
+                    android:text="Rate per Ton(Rs)"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/rateperton"
+                    android:layout_weight="0.5"
+                    android:textSize="@dimen/_16dp"
+                    android:fontFamily="@font/poppins_regular"
+
+                    android:text="15600"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear63"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/paymentoutwards"
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="@dimen/margin_12"
+                    android:layout_weight="0.5"
+                    android:text="Weight(Kgs)"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/weight"
+                    android:fontFamily="@font/poppins_regular"
+
+                    android:layout_weight="0.5"
+                    android:text="25960"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16dp" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/payment_title1"
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/margin_5"
+
+            android:weightSum="1">
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:weightSum="1">
+
+
+                <TextView
+                    android:id="@+id/total_eggs"
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Bill Amount(Rs)"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_12" />
+
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/billamount"
+                    android:layout_weight="0.5"
+                    android:text="180,648.00"
+                    android:textSize="@dimen/_16dp"
+                    android:fontFamily="@font/poppins_regular"
+
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear6"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/productonpercentage"
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="@dimen/margin_12"
+                    android:layout_weight="0.5"
+                    android:text="Total Amount"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/purtotalamount"
+                    android:layout_weight="0.5"
+                    android:fontFamily="@font/poppins_regular"
+
+                    android:text="1,88,801"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear32"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+
+                android:weightSum="1">
+
+
+
+
+                <TextView
+                    android:id="@+id/cartonscount"
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="@dimen/margin_12"
+                    android:layout_weight="0.5"
+                    android:text="Freight"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/freight"
+                    android:layout_weight="0.5"
+                    android:textSize="@dimen/_16dp"
+                    android:fontFamily="@font/poppins_regular"
+
+                    android:text="26500"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear30"
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/margin_5"
+
+            android:weightSum="1">
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linear31"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:weightSum="1">
+
+
+                <TextView
+                    android:id="@+id/billnum"
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Bill No.Date"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_12" />
+
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/billdate"
+                    android:layout_weight="0.5"
+                    android:text=""
+                    android:textSize="@dimen/_16dp"
+                    android:fontFamily="@font/poppins_regular"
+
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear34"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/chequeamount"
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="@dimen/margin_12"
+                    android:layout_weight="0.5"
+                    android:text="Cheque Number"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/chequenumber"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_regular"
+
+                    android:text="041638"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear35"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+
+                android:weightSum="1">
+
+
+
+
+                <TextView
+                    android:id="@+id/Chequedate"
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="@dimen/margin_12"
+                    android:layout_weight="0.5"
+                    android:text="Cheque Date"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/chequedate"
+                    android:layout_weight="0.5"
+                    android:textSize="@dimen/_16dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_regular"
+
+                    android:text="20/04/2020"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/line_bg"
+
+            />
+    </LinearLayout>
+</LinearLayout>

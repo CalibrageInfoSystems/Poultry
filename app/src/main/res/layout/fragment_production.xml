@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/_30dp"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/backgount_clr"
+    tools:context="com.cis.poultry.Fragments.HomeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview1"
+            android:scrollbars="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            app:reverseLayout="true"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_centerHorizontal="true"/>
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight="0.5"-->
+        <!--                android:orientation="horizontal"-->
+        <!--                android:background="@drawable/blue_bg"-->
+        <!--                android:padding="@dimen/margin_5"-->
+        <!--                android:id="@+id/linear1"-->
+        <!--                android:layout_margin="@dimen/margin_5"-->
+        <!--                android:layout_height="wrap_content">-->
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/imageView"-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_height="50dp"-->
+        <!--                   android:layout_weight="0.2"-->
+        <!--                    android:layout_gravity="center"-->
+        <!--                    android:contentDescription="Icon"-->
+        <!--                    android:src="@drawable/egg_icon_white" />-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/textView"-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:text="@string/poultryname"-->
+        <!--                    android:layout_gravity="center"-->
+
+        <!--                    android:gravity="center"-->
+        <!--                    android:layout_weight="0.8"-->
+        <!--                    android:textColor="@color/white"-->
+
+        <!--                    android:fontFamily="@font/poppins_regular"-->
+
+        <!--                    android:textSize="@dimen/margin_12"/>-->
+
+
+        <!--            </LinearLayout>-->
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight="0.5"-->
+        <!--                android:background="@drawable/white_bg"-->
+        <!--                android:padding="@dimen/margin_5"-->
+        <!--                android:id="@+id/linear2"-->
+        <!--                android:layout_margin="@dimen/margin_5"-->
+        <!--                android:layout_height="wrap_content">-->
+        <!--                <ImageView-->
+        <!--                    android:id="@+id/imageView1"-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_height="50dp"-->
+        <!--                    android:layout_weight="0.2"-->
+        <!--                    android:layout_gravity="center"-->
+        <!--                    android:contentDescription="Icon"-->
+        <!--                    android:src="@drawable/egg_icon" />-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/textView1"-->
+        <!--                    android:layout_width="0dp"-->
+        <!--                    android:layout_height="match_parent"-->
+        <!--                    android:text="@string/poultryname2"-->
+        <!--                    android:layout_gravity="center"-->
+
+        <!--                    android:gravity="center"-->
+        <!--                    android:layout_weight="0.8"-->
+        <!--                    android:textColor="@color/blue"-->
+
+        <!--                    android:fontFamily="@font/poppins_regular"-->
+
+        <!--                    android:textSize="@dimen/_16dp"/>-->
+        <!--            </LinearLayout>-->
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/Common_textView_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/visitlogs"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_25dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:paddingLeft="@dimen/margin_10"
+        android:id="@+id/linear_layout"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <!-- Text Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Date:" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:inputType="date"
+            android:focusable="false"
+            android:text=""
+            android:id="@+id/date"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/margin_12"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_marginBottom="5dp"
+            />
+
+        <!-- Spinner Element -->
+<!--        <Spinner-->
+<!--            android:id="@+id/spinner"-->
+
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:prompt="@string/spinner_title"-->
+<!--            />-->
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+
+            android:fillViewport="true"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_3dp"
+
+                android:orientation="vertical"
+                android:weightSum="1">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_3dp"
+android:visibility="gone"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/totalbirds"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:layout_weight="0.5"
+                    android:elevation="8dp"
+
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:id="@+id/headerlaout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_marginBottom="@dimen/margin_5"
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin_5"
+
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:id="@+id/title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:id="@+id/birtds"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+
+                                android:weightSum="1">
+
+                                <TextView
+                                    style="@style/Common_textView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:singleLine="true"
+                                    android:text="@string/birdscount"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_16" />
+
+
+                                <TextView
+                                    android:id="@+id/re"
+                                    style="@style/Common_textView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="@dimen/margin_10"
+                                    android:layout_weight="0.2"
+                                    android:text="-1.4 %"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/red"
+                                    android:textSize="@dimen/margin_10"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/text1"
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.2"
+                                android:text=""
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="@string/layers"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16dp" />
+
+
+                            <TextView
+                                android:id="@+id/lay_count"
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="0"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_14dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="@string/growers"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16dp" />
+
+
+                            <TextView
+                                android:id="@+id/growerscount"
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="0"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_14dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lyt_chicks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="@string/chicks"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16dp" />
+
+
+                            <TextView
+                                android:id="@+id/chicks_scount"
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text=" 0"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_14dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/line_bg"
+
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/totallayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="@string/total"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16dp" />
+
+
+                            <TextView
+                                android:id="@+id/totalvalue"
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text=""
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_14dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/totalcardview"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:layout_weight="0.5"
+                    android:elevation="8dp"
+
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:id="@+id/header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_marginBottom="@dimen/margin_5"
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin_5"
+
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:id="@+id/title4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:id="@+id/titlemorality"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+
+                                android:weightSum="1">
+
+                                <TextView
+                                    style="@style/Common_textView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_weight="0.8"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="@string/mortality"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_size_16" />
+
+
+                                <TextView
+                                    android:id="@+id/textper"
+                                    style="@style/Common_textView"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="@dimen/margin_10"
+                                    android:layout_weight="0.2"
+                                    android:text="-1.4 %"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/red"
+                                    android:textSize="@dimen/margin_10"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/text41"
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+
+                                android:layout_weight="0.2"
+                                android:text=""
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear41"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="@string/layers"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16dp" />
+
+
+                            <TextView
+                                android:id="@+id/mlaycount"
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text=""
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_14dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear42"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="@string/growers"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16dp" />
+
+
+                            <TextView
+                                android:id="@+id/mgrowers_count"
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text=""
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_14dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lyt_chicks3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="@string/chicks"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16dp" />
+
+
+                            <TextView
+                                android:id="@+id/mchicksscount"
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="  "
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_14dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/line_bg"
+
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/total_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+
+                            android:weightSum="1">
+
+                            <TextView
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="@string/total"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_16dp" />
+
+
+                            <TextView
+                                android:id="@+id/mtotal_value"
+                                style="@style/Common_textView"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text=""
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/blue"
+                                android:textSize="@dimen/_14dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:orientation="vertical"
+                    android:background="@color/backgount_clr">
+
+                    <TextView
+                        style="@style/Common_textView_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/totalamountsummery"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:text="@string/summery"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_3dp"
+
+                android:weightSum="1">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/payment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:elevation="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/paymenttitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_marginBottom="@dimen/margin_5"
+                        android:orientation="vertical"
+                        android:weightSum="9">
+
+                        <LinearLayout
+                            android:id="@+id/payment_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="@dimen/margin_5"
+                            android:layout_weight="3"
+                            android:orientation="horizontal"
+
+                            android:weightSum="1">
+
+
+                            <LinearLayout
+                                android:id="@+id/linear61"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:orientation="vertical"
+
+                                android:weightSum="1">
+
+
+                                <TextView
+                                    android:id="@+id/availablebirdss"
+                                    style="@style/Common_textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:paddingLeft="2dp"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text=""
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/_14dp" />
+
+                                <TextView
+                                    style="@style/Common_textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="@string/birdscount"
+                                    android:textAlignment="textStart"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_16dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linear3"
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.42"
+                                android:orientation="vertical"
+
+                                android:weightSum="1">
+
+
+                                <TextView
+                                    android:id="@+id/moralitycount"
+                                    style="@style/Common_textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text=""
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/_14dp" />
+
+                                <TextView
+                                    style="@style/Common_textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="@string/mortality"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_16dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linear63"
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.28"
+                                android:orientation="vertical"
+
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/remaingbirds"
+                                    style="@style/Common_textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text=""
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/_14dp" />
+
+                                <TextView
+                                    style="@style/Common_textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="@string/remaingbirds"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_16dp" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/payment_title1"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="0dp"
+                            android:layout_margin="@dimen/margin_5"
+                            android:layout_weight="3"
+                            android:orientation="horizontal"
+
+                            android:weightSum="1">
+
+
+                            <LinearLayout
+                                android:id="@+id/linear1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:orientation="vertical"
+
+                                android:weightSum="1">
+
+
+                                <TextView
+                                    android:id="@+id/num_eggs"
+                                    style="@style/Common_textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text=""
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/_14dp" />
+
+                                <TextView
+                                    style="@style/Common_textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="@string/noofeggs"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_16dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linear32"
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.42"
+                                android:orientation="vertical"
+
+                                android:weightSum="1">
+
+
+                                <TextView
+                                    android:id="@+id/damagedeggs"
+                                    style="@style/Common_textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text=""
+                                    android:layout_marginLeft="20dp"
+
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/_14dp" />
+
+                                <TextView
+                                    style="@style/Common_textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="@string/damages"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_16dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linear6"
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.28"
+                                android:orientation="vertical"
+
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/total_eggs"
+                                    style="@style/Common_textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text=""
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/_14dp" />
+
+                                <TextView
+                                    style="@style/Common_textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="@string/totaleggs"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_16dp" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/payment_titlee"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="0dp"
+                            android:layout_margin="@dimen/margin_5"
+                            android:layout_weight="3"
+                            android:orientation="horizontal"
+
+                            android:weightSum="1">
+
+
+                            <LinearLayout
+                                android:id="@+id/linear441"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:orientation="vertical"
+
+                                android:weightSum="1">
+
+
+                                <TextView
+                                    android:id="@+id/feed"
+                                    style="@style/Common_textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text=""
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/_14dp" />
+
+                                <TextView
+                                    style="@style/Common_textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="@string/Feed"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_16dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linear3s2"
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.42"
+                                android:orientation="vertical"
+
+                                android:weightSum="1">
+
+
+                                <TextView
+                                    android:id="@+id/cartonscount"
+                                    style="@style/Common_textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text=""
+                                    android:layout_marginLeft="20dp"
+
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/_14dp" />
+
+                                <TextView
+                                    style="@style/Common_textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="@string/cart"
+                                    android:textAlignment="textStart"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_16dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linears6"
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.28"
+                                android:orientation="vertical"
+
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/productonpercentage"
+                                    style="@style/Common_textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text=""
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/blue"
+                                    android:textSize="@dimen/_14dp" />
+
+                                <TextView
+                                    style="@style/Common_textView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="@string/productionn"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_16dp" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:background="@color/whitepure"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/margin_20"
+                    android:background="@color/whitepure" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/noData"
+                    android:visibility="gone"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="No Records Found"
+                    android:layout_marginTop="@dimen/text_size_20"
+                    android:textSize="@dimen/text_size_20"
+                    android:textColor="@color/colorAccent"
+                    android:layout_centerInParent="true"
+                    />
+            </LinearLayout>
+
+
+                <!--                    </android.support.v7.widget.CardView>-->
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

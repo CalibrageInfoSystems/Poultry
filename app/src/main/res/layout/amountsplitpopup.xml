@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/white_bg"
+
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/margin_5"
+
+            android:background="@color/white"
+
+
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_5"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/PaymentSummary"
+
+                android:textColor="@color/black2"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+        <TextView
+
+            android:id="@+id/close_txt"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:background="@drawable/multiplyp"
+            android:gravity="center"
+
+
+            android:textColor="@color/black2"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+
+        android:background="@drawable/line_bg"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:background="@color/white"
+
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+
+
+            android:layout_marginStart="@dimen/margin_5"
+            android:text="Total Due Amount (Rs) : "
+
+            android:textColor="@color/black2"
+            android:textSize="@dimen/_14dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+android:id="@+id/dueamount"
+
+
+            android:paddingBottom="@dimen/margin_5"
+            android:text=""
+
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/_14dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_two"
+        android:orientation="horizontal"
+
+        android:background="@color/blue"
+        android:weightSum="1"
+
+        >
+
+        <TextView
+            android:id="@+id/feed"
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:padding="@dimen/margin_5"
+            android:text="@string/Feed"
+            android:textAlignment="textStart"
+
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+          />
+        <TextView
+            android:id="@+id/amount"
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:padding="@dimen/margin_5"
+            android:text="@string/due_amount"
+            android:textAlignment="textStart"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+
+        android:orientation="vertical">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_term"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginBottom="5dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/close"
+            style="@style/Common_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@+id/recycler_term"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="3dp"
+
+            android:layout_marginBottom="@dimen/margin_5"
+
+            android:background="@drawable/button_bg_white"
+            android:paddingLeft="@dimen/_25dp"
+
+            android:paddingRight="@dimen/_25dp"
+            android:text="@string/close"
+
+            android:textColor="@color/black2"
+            android:textSize="@dimen/_14dp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

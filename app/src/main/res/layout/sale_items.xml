@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+                                    <LinearLayout
+                                        android:id="@+id/linear611"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:layout_marginTop="5dp"
+                                        android:weightSum="1">
+
+
+                                        <TextView
+                                            style="@style/Common_textView"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_8dp"
+                                            android:layout_weight="0.6"
+                                            android:singleLine="true"
+                                            android:fontFamily="@font/poppins_semibold"
+                                            android:text="@string/pak_1"
+                                            android:id="@+id/packer1"
+                                            android:textAlignment="textStart"
+                                            android:textColor="@color/black"
+                                            android:textSize="@dimen/_16dp" />
+
+                                        <TextView
+                                            android:id="@+id/packone"
+                                            style="@style/Common_textView"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:textSize="@dimen/_14dp"
+                                            android:layout_marginTop="@dimen/_8dp"
+                                            android:fontFamily="@font/poppins_semibold"
+                                            android:layout_weight="0.4"
+                                            android:textAlignment="textEnd"
+                                            android:textColor="@color/blue" />
+                                    </LinearLayout>
+</LinearLayout>

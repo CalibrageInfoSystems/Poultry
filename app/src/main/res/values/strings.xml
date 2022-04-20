@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Poultry</string>
+    <string name="appname"></string>
+    <string name="password">Password<font color="#ff0000"><bold> * </bold></font> </string>
+    <string name="confirm_pass">Confirm Password <font color="#ff0000"><bold> * </bold></font></string>
+    <string name="user_name">User Name <font color="#ff0000"><bold> * </bold></font> </string>
+    <string name="signin">Sign In</string>
+    <string name="ok">Ok</string>
+    <string name="error">Error</string>
+    <string name="Internet">Please Check Internet Connection</string>
+    <string name="err_please_enter_username">Please Enter Username</string>
+    <string name="err_please_enter_password">Please Enter Password</string>
+    <string name="err_please_enter_oldpassword">Please Enter Old Password</string>
+
+    <string name="err_please_enter_newpassword">Please Enter New Password</string>
+
+    <string name="err_please_enter_confirmpassword">Please Enter Confirm Password</string>
+
+
+    <string name="Invalid_user">Username Or Password Wrong , Please Try Again</string>
+    <string name="no_poultry">No  Poultrys Found</string>
+    <string name="poultryname">BALABALAJI SRINIVASA \n POULTRIES</string>
+    <string name="poultryname2">BALABALAJI SRINIVASA \n POULTRY COMPLEX</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="production">Production</string>
+    <string name="productionn">Production (%)</string>
+    <string name="eggsale">Egg Sale</string>
+    <string name="eggsaleregister">Egg Sale Register</string>
+    <string name="eggstockleregister">Egg Stock Register</string>
+    <string name="feedpurchase">Feed Purchase</string>
+    <string name="eggstock">Egg Stock</string>
+    <string name="pursage">Purchase</string>
+    <string name="log_off">Logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="overview">Overview</string>
+    <string name="spinner_title">Select</string>
+    <string name="layers">Layers</string>
+    <string name="growers">Growers</string>
+    <string name="birds">Total Birds</string>
+    <string name="chicks">Chicks</string>
+    <string name="total">Total</string>
+    <string name="totaleggs">Total Eggs</string>
+    <string name="packaging">Packing</string>
+    <string name="pak_1">Packer-1</string>
+
+    <string name="paks_1">(Jai Maa Durga Poultry)</string>
+    <string name="pak_2">Packer-2</string>
+    <string name="paks_2">(Sri Lakshmi Egg Traders)</string>
+    <string name="payments">Payments</string>
+    <string name="inwards">Inward</string>
+    <string name="outward">Outward</string>
+    <string name="dif">Difference</string>
+    <string name="Rs">\u20B9</string>
+    <string name="Rs1">\u20B9 12,550,421.00</string>
+    <string name="Rs2">\u20B9 4,949,579.00</string>
+
+    <string name="billingAmount">\u20B9 6,134,801.40</string>
+    <string name="outStandingAmount">\u20B9 1,702,657.00</string>
+    <string name="paidAmount">\u20B9 17,605,029.00</string>
+    <string name="receivedamount">\u20B9 3,200,000.00</string>
+    <string name="dueamount">\u20B9 5,053,375</string>
+    <string name="mortality">Mortality</string>
+    <string name="visitlogs">View Visit Logs</string>
+    <string name="birdscount">Available \nBirds</string>
+    <string name="remaingbirds">Remaining Birds</string>
+    <string name="cart">Production(Cartons)</string>
+    <string name="eggs">Eggs</string>
+    <string name="prod">Prod(%)</string>
+    <string name="reaingeggs">Remaining Eggs</string>
+    <string name="eachbox">Each Box Contains  :</string>
+    <string name="billrate">Bill Rate</string>
+    <string name="totalproduction">Total \nProduction</string>
+    <string name="totallproduction">Total \nProd</string>
+    <string name="server_error">An Error has Occurred.</string>
+    <string name="changepassword">Change Password</string>
+    <string name="OldPassword">Old Password</string>
+    <string name="NewPassword">New Password</string>
+    <string name="ConformPassword">Conform Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="alert_logout">Are you sure you want to Logout?</string>
+    <string name="summery">Summary</string>
+    <string name="PaymentSummary">Payment Summary</string>
+    <string name="close">Close</string>
+    <string name="Feed">Feed</string>
+    <string name="due_amount">Due Amount (Rs)</string>
+    <string name="error_confirm"><![CDATA[Password & Confirm Password not Matching]]></string>
+    <string name="noofeggs">No.of Eggs</string>
+    <string name="damages">Damaged Eggs</string>
+    <string name="closing">Closing Stock</string>
+    <string name="str_jayama">     Jai Maa Durga    </string>
+    <string name="str_videos">Brand Agro</string>
+    <string name="localsale">Local Sales</string>
+    <string-array name="country_arrays">
+        <item>Layers</item>
+
+    </string-array>
+</resources>

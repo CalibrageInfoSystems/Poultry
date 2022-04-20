@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_two"
+        android:background="@drawable/border"
+
+        android:orientation="horizontal"
+
+        android:weightSum="1"
+
+        >
+
+        <TextView
+            android:id="@+id/feed"
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/Feed"
+            android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:padding="@dimen/margin_5"
+            android:textSize="12dp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            android:id="@+id/amount"
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_5"
+            android:layout_weight=".5"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:text="@string/due_amount"
+android:textColor="@color/black"
+            android:textAlignment="textStart"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

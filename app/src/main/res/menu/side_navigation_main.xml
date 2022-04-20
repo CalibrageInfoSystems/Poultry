@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/dashboard"
+        android:title="@string/dashboard"
+        />
+    <item
+        android:id="@+id/action_production"
+        android:enabled="true"
+        android:icon="@drawable/production"
+        android:title="@string/production" />
+
+
+    <item
+        android:id="@+id/action_sale"
+        android:enabled="true"
+        android:icon="@drawable/sales"
+        android:title="@string/eggsale"
+        />
+    <item
+        android:id="@+id/action_stock"
+        android:enabled="true"
+        android:icon="@drawable/stock"
+        android:title="@string/eggstock"
+        />
+    <item
+        android:id="@+id/action_bill"
+        android:enabled="true"
+        android:icon="@drawable/bill"
+        android:title="@string/pursage"
+        />
+    <item
+        android:id="@+id/action_change"
+        android:enabled="true"
+        android:icon="@drawable/password_48b"
+        android:title="@string/changepassword"
+        />
+    <item
+        android:enabled="true"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/log_off"
+        android:id="@+id/nav_logout"/>
+</menu>

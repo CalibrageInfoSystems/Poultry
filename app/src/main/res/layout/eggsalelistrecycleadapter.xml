@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear"
+        android:weightSum="1"
+        android:background="@color/whitepure">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/image_more"
+            android:src="@drawable/ic_expand_more_black_24dp">
+
+        </ImageView>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:visibility="gone"
+            android:id="@+id/image_less"
+            android:src="@drawable/ic_expand_less_black_24dp"></ImageView>
+        <TextView
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/saledate"
+            android:layout_weight="0.25"
+            android:paddingLeft="5dp"
+            android:text="Date"
+            android:textSize="@dimen/margin_12"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="textStart"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/salecartons"
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/margin_12"
+            android:paddingLeft="2dp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_weight="0.25"
+            android:text="No. of \nCartons"
+            android:textAlignment="textStart"
+            android:textColor="@color/black" />
+        <TextView
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/salebillrate"
+            android:layout_weight="0.25"
+            android:paddingLeft="2dp"
+
+            android:text="Bill Rate"
+            android:textSize="@dimen/_16dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textAlignment="textStart"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/salebillamount"
+            style="@style/Common_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Bill Amount"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/line_bg"
+
+        />
+    <LinearLayout
+        android:id="@+id/sublinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       android:visibility="gone"
+
+        android:weightSum="1"
+        android:background="@color/whitepure">
+
+        <LinearLayout
+            android:id="@+id/sublinearr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_10"
+            android:weightSum="1"
+            android:background="@color/whitepure">
+
+
+            <LinearLayout
+                android:id="@+id/linear61"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/whitepure"
+                android:weightSum="1">
+
+
+
+                <TextView
+                    android:id="@+id/lorry"
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textSize="@dimen/margin_12"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_weight="0.5"
+                    android:text="Lorry No."
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/lorryNo"
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.5"
+                    android:text="AP37TD6759"
+                    android:textSize="@dimen/_16dp"
+
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear3"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+
+                android:weightSum="1">
+
+
+
+
+                <TextView
+                    android:id="@+id/necc"
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="@dimen/margin_12"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.5"
+                    android:text="NECC Rate"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/neccrate"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_weight="0.5"
+                    android:textSize="@dimen/_16dp"
+                    android:layout_marginLeft="20dp"
+
+                    android:text="4.73"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear63"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/camt"
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="@dimen/margin_12"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0.5"
+                    android:text="Cumulative Amt"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/poppins_regular"
+
+                    android:id="@+id/cummulativeAmount"
+                    android:layout_weight="0.5"
+                    android:text="2607292.8"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16dp" />
+
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/line_bg"
+
+        />
+</LinearLayout>
+</LinearLayout>
